@@ -31,15 +31,15 @@ language governing permissions and limitations under the License.
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>Estatio (Open Source)</name>
+    <name>InnEMS by Innovase</name>
     <description>
-        Estatio is modern and flexible property management software, built on Apache Isis.
+        InnEMS is modern and flexible property management software, built on Apache Isis.
         It offers real estate professionals and service providers the power and 
         flexibility to manage their business in a superior, flexible and 
         cost-effective manner.
     </description>
 
-    <url>https://www.estatio.org</url>
+    <url>https://www.innovase.co.ke</url>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -54,14 +54,9 @@ language governing permissions and limitations under the License.
     </scm>
     <developers>
         <developer>
-            <id>jcvanderwal</id>
-            <name>Jeroen van der Wal</name>
-            <email>jeroen@stromboli.it</email>
-        </developer>
-        <developer>
-            <id>danhaywood</id>
-            <name>Dan Haywood</name>
-            <email>dan@haywood-associates.co.uk</email>
+            <id>gikabu</id>
+            <name>Jonathan Gikabu</name>
+            <email>jonathan.gikabu@innovase.co.ke</email>
         </developer>
     </developers>
 
@@ -190,7 +185,7 @@ language governing permissions and limitations under the License.
 
 
 
-            <!-- Estatio modules -->
+            <!-- InnEMS modules -->
             <dependency>
                 <groupId>org.estatio</groupId>
                 <artifactId>estatio-app</artifactId>
@@ -274,9 +269,9 @@ language governing permissions and limitations under the License.
 
             <!--
             it ought not to be necessary to specify the version explicitly, however there is an issue with IntelliJ's
-            maven support.  If both the Incode Platform and Estatio are in the IDE workspace, and then try to use
+            maven support.  If both the Incode Platform and InnEMS are in the IDE workspace, and then try to use
             a -SNAPSHOT of the Incode Platform as the parent, then the IDE doesn't correctly distinguish between the
-             ${revision} property defined for the incode-parent pom.xml vs the ${revision} defined for Estatio itself;
+             ${revision} property defined for the incode-parent pom.xml vs the ${revision} defined for InnEMS itself;
              it's a namespacing issue, perhaps because both are resolved in the same maven reactor (?)
 
             The net result is an incorrect classpath, so compilation issues.
@@ -811,6 +806,12 @@ language governing permissions and limitations under the License.
                 <version>${incode-platform.version}</version>
                 <type>test-jar</type>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <scope>runtime</scope>
             </dependency>
 
 

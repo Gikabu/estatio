@@ -46,11 +46,11 @@ public class EstatioApplication extends IsisWicketApplication {
         final Module estatioOverrides = new AbstractModule() {
             @Override
             protected void configure() {
-                bind(String.class).annotatedWith(Names.named("applicationName")).toInstance("Estatio");
+                bind(String.class).annotatedWith(Names.named("applicationName")).toInstance("Innovase PMS");
                 bind(String.class).annotatedWith(Names.named("applicationCss")).toInstance("css/application.css");
                 bind(String.class).annotatedWith(Names.named("applicationJs")).toInstance("scripts/application.js");
-                bind(String.class).annotatedWith(Names.named("welcomeMessage")).toInstance("This is Estatio - an open source property management system implemented using Apache Isis.");
-                bind(String.class).annotatedWith(Names.named("aboutMessage")).toInstance("Estatio");
+                bind(String.class).annotatedWith(Names.named("welcomeMessage")).toInstance("Innovase PMS by Innovase Ltd");
+                bind(String.class).annotatedWith(Names.named("aboutMessage")).toInstance("Innovase PMS");
                 bind(InputStream.class).annotatedWith(Names.named("metaInfManifest")).toProvider(Providers.of(getServletContext().getResourceAsStream("/META-INF/MANIFEST.MF")));
 
                 // if uncommented, overrides isis.properties
