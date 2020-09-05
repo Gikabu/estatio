@@ -65,9 +65,7 @@ import lombok.Setter;
                         + "transactionDate == :transactionDate && "
                         + "sequence == :sequence")
 })
-@Index(
-        name = "FinancialAccountTransaction_financialAccount_transactionDate_IDX",
-        members = { "financialAccount", "transactionDate" })
+@Index(members = { "financialAccount", "transactionDate" })
 @DomainObject(
         objectType = "org.estatio.dom.financial.FinancialAccountTransaction"
 )

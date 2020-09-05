@@ -53,7 +53,7 @@ import lombok.Setter;
                         + "WHERE leaseTerm == :leaseTerm "),
 })
 @Indices({
-        @Index(name = "PersistedCalculationResult_leaseTerm_IDX", members = { "leaseTerm" })
+        @Index(members = { "leaseTerm" })
 })
 @DomainObject(objectType = "org.estatio.module.lease.dom.amendments.PersistedCalculationResult")
 public class PersistedCalculationResult extends UdoDomainObject2<PersistedCalculationResult>  {

@@ -55,17 +55,11 @@ import lombok.Setter;
         strategy = VersionStrategy.VERSION_NUMBER,
         column = "version")
 @Indices({
-        @Index(
-                name = "DocumentAbstract_type_atPath_IDX",
-                members = { "type", "atPath" }
+        @Index(members = { "type", "atPath" }
         ),
-        @Index(
-                name = "DocumentAbstract_atPath_type_IDX",
-                members = { "atPath", "type" }
+        @Index(members = { "atPath", "type" }
         ),
-        @Index(
-                name = "DocumentAbstract_type_atPath_name_IDX",
-                members = { "type", "atPath", "name" }
+        @Index(members = { "type", "atPath", "name" }
         ),
 })
 @DomainObject(

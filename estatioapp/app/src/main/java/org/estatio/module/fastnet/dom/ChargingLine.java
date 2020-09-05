@@ -125,9 +125,9 @@ import lombok.Setter;
                         + "exportDate == :exportDate "),
 })
 @Indices({
-        @Index(name = "ChargingLine_keyToExternalRef_IDX", members = { "keyToLeaseExternalReference" }),
-        @Index(name = "ChargingLine_keyToExternalRef_keyToChargeRef_IDX", members = { "keyToLeaseExternalReference", "keyToChargeReference" }),
-        @Index(name = "ChargingLine_unqiue_discarding_status_IDX", members = { "keyToLeaseExternalReference", "keyToChargeReference", "fromDat", "tomDat", "arsBel", "exportDate" })
+        @Index(members = { "keyToLeaseExternalReference" }),
+        @Index(members = { "keyToLeaseExternalReference", "keyToChargeReference" }),
+        @Index(members = { "keyToLeaseExternalReference", "keyToChargeReference", "fromDat", "tomDat", "arsBel", "exportDate" })
 })
 @Uniques({
         @Unique(

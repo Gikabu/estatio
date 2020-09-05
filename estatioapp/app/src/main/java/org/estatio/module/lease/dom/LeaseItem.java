@@ -111,12 +111,8 @@ import lombok.Setter;
         strategy = VersionStrategy.VERSION_NUMBER,
         column = "version")
 @Indices({
-        @Index(
-                name = "LeaseItem_lease_type_sequence_IDX",
-                members = {"lease", "type", "sequence"}),
-        @Index(
-                name = "LeaseItem_lease_type_startDate_IDX",
-                members = {"lease", "type", "startDate"})
+        @Index(members = {"lease", "type", "sequence"}),
+        @Index(members = {"lease", "type", "startDate"})
 })
 @Queries({
         @Query(

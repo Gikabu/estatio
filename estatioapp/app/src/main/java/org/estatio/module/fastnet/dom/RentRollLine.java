@@ -77,13 +77,11 @@ import lombok.Setter;
                         + "ORDER BY exportDate DESC")
 })
 @Indices({
-        @Index(name = "RentRollLine_kontraktNr_IDX", members = { "kontraktNr" }),
-        @Index(name = "RentRollLine_objektsNummer_IDX", members = { "objektsNummer" })
+        @Index(members = { "kontraktNr" }),
+        @Index(members = { "objektsNummer" })
 })
 @Uniques({
-        @Unique(
-                name = "RentRollLine_objektsNummer_kontraktNr_evdInSd_UNQ",
-                members = { "objektsNummer", "kontraktNr", "evdInSd" }
+        @Unique(members = { "objektsNummer", "kontraktNr", "evdInSd" }
         )
 })
 @DomainObject(

@@ -125,10 +125,8 @@ import lombok.Setter;
                         "WHERE budget == :budget "),
 })
 @Indices({
-        @Index(name = "BudgetCalculation_budget_unit_invoiceCharge_type_IDX",
-                members = { "budget", "unit", "invoiceCharge", "calculationType" }),
-        @Index(name = "BudgetCalculation_budget_unit_invoiceCharge_incomingCharge_type_IDX",
-                members = { "budget", "unit", "invoiceCharge", "incomingCharge", "calculationType" })
+        @Index(members = { "budget", "unit", "invoiceCharge", "calculationType" }),
+        @Index(members = { "budget", "unit", "invoiceCharge", "incomingCharge", "calculationType" })
 })
 @Unique(name = "BudgetCalculation_partitionItem_tableItem_calculationType_UNQ", members = {"partitionItem", "tableItem", "calculationType"})
 @DomainObject(

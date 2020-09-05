@@ -182,7 +182,7 @@ import lombok.val;
 })
 @Unique(name = "CodaDocHead_cmpCode_docCode_docNum_UNQ", members = { "cmpCode", "docCode", "docNum" })
 @Indices({
-        @Index(name = "CodaDocHead_codaPeriodQuarter_handling_IDX", members = { "codaPeriodQuarter", "handling" })
+        @Index(members = { "codaPeriodQuarter", "handling" })
 })
 @DomainObject(
         objectType = "coda.CodaDocHead",

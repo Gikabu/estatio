@@ -114,7 +114,7 @@ import lombok.Setter;
         @Unique(name = "CodaDocLine_docHead_lineNum_UNQ", members = { "docHead", "lineNum" }),
 })
 @Indices({
-        @Index(name = "CodaDocLine_incomingInvoiceItem_IDX", members = { "incomingInvoiceItem" }),
+        @Index(members = { "incomingInvoiceItem" }),
 })
 @DomainObject(
         objectType = "coda.CodaDocLine",

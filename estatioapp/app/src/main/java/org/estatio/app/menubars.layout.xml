@@ -356,46 +356,46 @@
                 </mb3:serviceAction>
             </mb3:section>
         </mb3:menu>
-        <mb3:menu>
-            <mb3:named>Payments</mb3:named>
-            <mb3:section>
-                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="preparePaymentBatchesFra">
-                    <cpt:named>Prepare Payment Batches (France)</cpt:named>
-                </mb3:serviceAction>
-                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="findCurrentPaymentBatches">
-                    <cpt:named>Find Current Payment Batches</cpt:named>
-                </mb3:serviceAction>
-                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="findRecentPaymentBatches">
-                    <cpt:named>Find Recent Payment Batches</cpt:named>
-                </mb3:serviceAction>
-                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="allPaymentBatches">
-                    <cpt:named>All Payment Batches</cpt:named>
-                </mb3:serviceAction>
-            </mb3:section>
-            <mb3:section>
-                <mb3:serviceAction objectType="payments.PayDirectDebitMenu" id="directDebitFraManager">
-                    <cpt:named>Direct Debit Manager (France)</cpt:named>
-                </mb3:serviceAction>
-            </mb3:section>
-            <mb3:section>
-                <mb3:serviceAction objectType="org.estatio.capex.dom.coda.CodaMappingMenu" id="allCodaMappingsFra">
-                    <cpt:named>All Coda Mappings (France)</cpt:named>
-                </mb3:serviceAction>
-            </mb3:section>
-            <mb3:section>
-                <mb3:serviceAction objectType="payments.export.InvoicesInMenu" id="downloadPaymentsFra">
-                    <cpt:named>Download Payments (France)</cpt:named>
-                </mb3:serviceAction>
-            </mb3:section>
-            <mb3:section>
-                <mb3:serviceAction objectType="payments.PaymentBatchItaMenu" id="importPaymentBatch">
-                    <cpt:named>Import PaymentBatch (Italy)</cpt:named>
-                </mb3:serviceAction>
-                <mb3:serviceAction objectType="payments.PaymentBatchItaMenu" id="downloadFullyApprovedInvoices">
-                    <cpt:named>Download Fully Approved Invoices (Italy)</cpt:named>
-                </mb3:serviceAction>
-            </mb3:section>
-        </mb3:menu>
+<!--        <mb3:menu>-->
+<!--            <mb3:named>Payments</mb3:named>-->
+<!--            <mb3:section>-->
+<!--                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="preparePaymentBatchesFra">-->
+<!--                    <cpt:named>Prepare Payment Batches (France)</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="findCurrentPaymentBatches">-->
+<!--                    <cpt:named>Find Current Payment Batches</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="findRecentPaymentBatches">-->
+<!--                    <cpt:named>Find Recent Payment Batches</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--                <mb3:serviceAction objectType="payments.PaymentBatchMenu" id="allPaymentBatches">-->
+<!--                    <cpt:named>All Payment Batches</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--            </mb3:section>-->
+<!--            <mb3:section>-->
+<!--                <mb3:serviceAction objectType="payments.PayDirectDebitMenu" id="directDebitFraManager">-->
+<!--                    <cpt:named>Direct Debit Manager (France)</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--            </mb3:section>-->
+<!--            <mb3:section>-->
+<!--                <mb3:serviceAction objectType="org.estatio.capex.dom.coda.CodaMappingMenu" id="allCodaMappingsFra">-->
+<!--                    <cpt:named>All Coda Mappings (France)</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--            </mb3:section>-->
+<!--            <mb3:section>-->
+<!--                <mb3:serviceAction objectType="payments.export.InvoicesInMenu" id="downloadPaymentsFra">-->
+<!--                    <cpt:named>Download Payments (France)</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--            </mb3:section>-->
+<!--            <mb3:section>-->
+<!--                <mb3:serviceAction objectType="payments.PaymentBatchItaMenu" id="importPaymentBatch">-->
+<!--                    <cpt:named>Import PaymentBatch (Italy)</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--                <mb3:serviceAction objectType="payments.PaymentBatchItaMenu" id="downloadFullyApprovedInvoices">-->
+<!--                    <cpt:named>Download Fully Approved Invoices (Italy)</cpt:named>-->
+<!--                </mb3:serviceAction>-->
+<!--            </mb3:section>-->
+<!--        </mb3:menu>-->
         <mb3:menu>
             <mb3:named>Tasks &amp; Docs</mb3:named>
             <mb3:section>

@@ -61,9 +61,7 @@ import lombok.Setter;
                 name = "TurnoverReportingConfig_occupancy_type_UNQ", members = { "occupancy", "type" })
 })
 @Indices({
-        @Index(
-                name = "TurnoverReportingConfig_occupancy_type_frequency_IDX",
-                members = {"occupancy", "type", "frequency"}),
+        @Index(members = {"occupancy", "type", "frequency"}),
 })
 @javax.jdo.annotations.Queries({
         @javax.jdo.annotations.Query(

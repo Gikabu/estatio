@@ -114,13 +114,9 @@ import lombok.Setter;
         ),
 })
 @Indices({
-        @Index(
-                name = "DocumentTemplate_atPath_date_IDX",
-                members = { "atPathCopy", "date" }
+        @Index(members = { "atPathCopy", "date" }
         ),
-        @Index(
-                name = "DocumentTemplate_type_date_IDX",
-                members = { "typeCopy", "date" }
+        @Index(members = { "typeCopy", "date" }
         ),
 })
 @DomainObject(

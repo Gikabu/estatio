@@ -282,12 +282,12 @@ import lombok.Setter;
                 @Persistent(name = "bankAccount")
         })
 @Indices({
-        @Index(name = "IncomingInvoice_bankAccount_IDX", members = { "bankAccount" }),
-        @Index(name = "IncomingInvoice_approvalState_IDX", members = { "approvalState" }),
-        @Index(name = "IncomingInvoice_atPath_approvalState_IDX", members = { "applicationTenancyPath", "approvalState" }),
-        @Index(name = "IncomingInvoice_approvalState_atPath_IDX", members = { "approvalState", "applicationTenancyPath" }),
-        @Index(name = "IncomingInvoice_barcode_IDX", members = { "barcode" }),
-        @Index(name = "IncomingInvoice_uuid_IDX", members = { "uuid" }),
+        @Index(members = { "bankAccount" }),
+        @Index(members = { "approvalState" }),
+        @Index(members = { "applicationTenancyPath", "approvalState" }),
+        @Index(members = { "approvalState", "applicationTenancyPath" }),
+        @Index(members = { "barcode" }),
+        @Index(members = { "uuid" }),
 })
 // unused, since rolled-up
 //@Unique(name = "IncomingInvoice_invoiceNumber_UNQ", members = { "invoiceNumber" })

@@ -51,7 +51,7 @@ import lombok.Setter;
         column = "version")
 @Unique(name = "BudgetCalculationResult_budget_occupancy_invoiceCharge_type_UNQ", members = { "budget", "occupancy", "invoiceCharge", "type"})
 @Indices({
-        @Index(name = "BudgetCalculationResult_leaseTerm_budget_type_IDX", members = { "leaseTerm", "budget", "type" })
+        @Index(members = { "leaseTerm", "budget", "type" })
 })
 @javax.jdo.annotations.Queries({
         @Query(

@@ -102,13 +102,9 @@ import lombok.Setter;
 })
 @Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 @Indices({
-        @Index(
-                name = "Communication_type_atPath_IDX",
-                members = { "type", "atPath" }
+        @Index(members = { "type", "atPath" }
         ),
-        @Index(
-                name = "Communication_atPath_type_IDX",
-                members = { "atPath", "type" }
+        @Index(members = { "atPath", "type" }
         ),
 })
 @Uniques({

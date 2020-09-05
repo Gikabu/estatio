@@ -215,8 +215,8 @@ import static org.estatio.module.capex.dom.util.CountryUtil.isItalian;
                         + "ORDER BY entryDate")
 })
 @Indices({
-        @Index(name = "Order_sellerOrderReference_IDX", members = { "sellerOrderReference" }),
-        @Index(name = "Order_buyer_buyerOrderNumber_IDX", members = { "buyer", "buyerOrderNumber" })
+        @Index(members = { "sellerOrderReference" }),
+        @Index(members = { "buyer", "buyerOrderNumber" })
 })
 @Unique(name = "Order_reference_UNQ", members = { "orderNumber" })
 @DomainObject(

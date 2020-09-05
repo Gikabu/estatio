@@ -808,13 +808,6 @@ language governing permissions and limitations under the License.
                 <scope>test</scope>
             </dependency>
 
-            <dependency>
-                <groupId>org.postgresql</groupId>
-                <artifactId>postgresql</artifactId>
-                <scope>runtime</scope>
-            </dependency>
-
-
         </dependencies>
     </dependencyManagement>
 

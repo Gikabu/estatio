@@ -89,8 +89,7 @@ import lombok.Setter;
                         + "WHERE reference.matches(:regex)")
 })
 @javax.jdo.annotations.Indices({
-        @javax.jdo.annotations.Index(name = "BankAccount_iban",
-                members = { "iban" }),
+        @javax.jdo.annotations.Index(members = { "iban" }),
 })
 @DomainObject(
         editing = Editing.DISABLED,

@@ -110,12 +110,9 @@ import lombok.Setter;
                         "&& invoice.status == :invoiceStatus")
 })
 @javax.jdo.annotations.Indices({
-        @javax.jdo.annotations.Index(name = "InvoiceItemForLease_LeaseTerm_StartDate_EndDate_DueDate_IDX",
-                members = { "leaseTerm", "startDate", "endDate", "dueDate" }),
-        @javax.jdo.annotations.Index(name = "InvoiceItemForLease_LeaseTerm_StartDate_EndDate_IDX",
-                members = { "leaseTerm", "startDate", "endDate" }),
-        @javax.jdo.annotations.Index(name = "InvoiceItemForLease_LeaseTerm_EffectiveStartDate_EffectiveEndDate_IDX",
-                members = { "leaseTerm", "effectiveStartDate", "effectiveEndDate" }),
+        @javax.jdo.annotations.Index(members = { "leaseTerm", "startDate", "endDate", "dueDate" }),
+        @javax.jdo.annotations.Index(members = { "leaseTerm", "startDate", "endDate" }),
+        @javax.jdo.annotations.Index(members = { "leaseTerm", "effectiveStartDate", "effectiveEndDate" }),
 
 })
 @DomainObject(

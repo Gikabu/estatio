@@ -127,10 +127,8 @@ import lombok.Setter;
                         + "ORDER BY invoiceDate DESC")
 })
 @Indices({
-        @Index(name = "Invoice_invoiceNumber_IDX",
-                members = { "invoiceNumber" })
-        , @Index(name = "Invoice_sendTo_IDX",
-        members = { "sendTo" })
+        @Index(members = { "invoiceNumber" })
+        , @Index(members = { "sendTo" })
 })
 @DomainObject(
         editing = Editing.DISABLED

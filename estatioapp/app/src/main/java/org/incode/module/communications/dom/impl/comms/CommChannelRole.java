@@ -56,21 +56,13 @@ import lombok.Setter;
 })
 @Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 @Indices({
-        @Index(
-                name = "CommChannelRole_comm_channel_type_IDX",
-                members = { "communication", "channel", "type" }
+        @Index(members = { "communication", "channel", "type" }
         ),
-        @Index(
-                name = "Communication_channel_comm_type_IDX",
-                members = { "channel", "communication", "type" }
+        @Index(members = { "channel", "communication", "type" }
         ),
-        @Index(
-                name = "CommChannelRole_comm_type_channel_IDX",
-                members = { "communication", "type", "channel" }
+        @Index(members = { "communication", "type", "channel" }
         ),
-        @Index(
-                name = "Communication_channel_type_comm_IDX",
-                members = { "channel", "type", "communication" }
+        @Index(members = { "channel", "type", "communication" }
         ),
 })
 @Uniques({
